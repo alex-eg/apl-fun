@@ -1,11 +1,11 @@
-⍝ Run as: apl --noCIN -q -f fact.apl --noColor
+⍝ Run as: apl -s -f fact.apl
 
 ⍝ This doesn't have check for zero, for example
 ⍝ And I don't know, how ⍳ handles negative numbers
 FACT ← { ×/⍳⍵ } ⍝ Just reducing list of numbers
 
 
-∇ MAIN
+∇MAIN
   FACT¨⍳10 ⍝ ¨ is foreach. Useful!
 ∇
 
